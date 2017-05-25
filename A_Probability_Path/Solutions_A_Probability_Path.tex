@@ -1,0 +1,94 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{geometry}
+\geometry{left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm}
+\renewcommand{\textfraction}{0.15}
+\renewcommand{\topfraction}{0.85}
+\renewcommand{\bottomfraction}{0.65}
+\renewcommand{\floatpagefraction}{0.60}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{mathrsfs}
+\usepackage{amsthm}
+\usepackage{extarrows}
+\usepackage{bm}
+\usepackage{graphicx}
+\usepackage[section]{placeins}
+\usepackage{flafter}
+\usepackage{array}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{color}
+\usepackage{multirow}
+
+
+\DeclareMathOperator*{\argmaxdown}{arg\,max}
+\DeclareMathOperator*{\argmindown}{arg\,min}
+\DeclareMathOperator{\argmax}{arg\,max}
+\DeclareMathOperator{\argmin}{arg\,min}
+
+
+\title{Solutions of A Probabilit Path}
+\author{Chao Cheng
+  \\
+  Github ID: fenguoerbian
+  \\
+  Mail: 413557584@qq.com}
+\date{\today}
+
+
+
+\begin{document}
+\maketitle
+
+\section{Solutions to Chapter 1: Sets and Events}
+\label{sec:solutions-chapter-1}
+
+\newcounter{Lcount}
+\setcounter{Lcount}{0}
+\begin{list}{1.9.\arabic{Lcount}}{\usecounter{Lcount}}
+\item \label{ex.1.9.1}
+  $\forall B \in \aleph$, since $\mathcal{C}\subset B$, we have $\{0\}\in B$, therefore $\Omega\setminus \{0\}=\{1\}\in B$. Also $\emptyset\in B$ and $\Omega\in B$. Therefore $\{\emptyset,\{0\}, \{1\}, \Omega\}\subset B$. Note that $\mathcal{P}\left(\Omega\right) = \{\emptyset,\{0\}, \{1\}, \Omega\}$. This means
+  \[
+    \aleph = \{\mathcal{P}\left(\Omega\right)\}
+  \]
+\item \label{ex.1.9.2}Like in 1.9.\ref{ex.1.9.1}, we can conclude that
+  \[
+    \forall B \in \aleph \quad \Rightarrow \left\{\emptyset, \{0\}, \{1,2\}, \Omega\right\} \subset B
+  \]
+  Also note that $\left\{\emptyset, \{0\}, \{1,2\}, \Omega\right\}$ is a $\sigma$-field itself which means
+  \[
+    \sigma\left(\mathcal{C}\right) = \left\{\emptyset, \{0\}, \{1,2\}, \Omega\right\}
+  \]
+  Those subsets of $\Omega$ which are not inclued in $\sigma(\mathcal{C})$ are
+  \[
+    \{1\},\quad \{2\},\quad \{0,1\},\quad \{0,2\}
+  \]
+  and it's easy to check that they are all inclued in $B$ if any one of them is inclued. So to sum up, we have
+  \[
+    \aleph = \left\{\sigma(\mathcal{C}), \mathcal{P}\left(\Omega\right)\right\}
+  \]
+\item \label{ex.1.9.3} 
+\end{list}
+
+
+
+
+
+
+
+
+
+
+
+\clearpage
+\appendix
+
+\end{document}
+
+
+
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
