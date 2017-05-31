@@ -9,6 +9,7 @@
 \usepackage{amsfonts}
 \usepackage{mathrsfs}
 \usepackage{amsthm}
+\usepackage{amssymb}
 \usepackage{extarrows}
 \usepackage{bm}
 \usepackage{graphicx}
@@ -138,8 +139,46 @@
     A_n \cap B_n = \left(A_n^c \cup B_n^c\right)^c \to \left(A^c \cup B_c\right)^c = A \cap B
   \]
 \item \label{ex.1.9.4}
-
-
+  \[
+    \begin{aligned}
+      \underset{n\to\infty}{\mathrm{lim\,inf}} A_n &= \bigcup\limits_{n=1}^\infty \bigcap\limits_{k=n}^\infty A_k    \\
+      &= \bigcup\limits_{n=1}^\infty \bigcap\limits_{k=n}^\infty \left\{
+        \frac{m}{k}:m\in\mathbb{N}
+      \right\}    \\
+      &= \bigcup\limits_{n=1}^\infty \mathbb{N} = \mathbb{N}
+    \end{aligned}
+  \]
+  \[
+    \begin{aligned}
+      \underset{n\to\infty}{\mathrm{lim\,sup}} A_n &= \bigcap\limits_{n=1}^\infty \bigcup\limits_{k=n}^\infty A_k    \\
+      &= \bigcap\limits_{n=1}^\infty \bigcup\limits_{k=n}^\infty \left\{
+        \frac{m}{k}:m\in\mathbb{N}
+      \right\}    \\
+      &= \bigcap\limits_{n=1}^\infty\mathbb{Q^+} = \mathbb{Q^+}
+    \end{aligned}
+  \]
+  
+\item
+  \[
+    \begin{aligned}
+      & \left\{\omega:f_n\left(\omega\right)\nrightarrow f\left(\omega\right)\right\}    \\
+      \iff & \left\{\omega: \exists\;\epsilon > 0,\;\mathrm{s.t.}\;\forall N,\;\exists\;n>N,\;\mathrm{s.t.}\;
+        \left|f_n\left(\omega\right) - f\left(\omega\right)\right|>\epsilon
+      \right\}    \\
+      \iff & \bigcup\limits_{k=1}^\infty\bigcap\limits_{N=1}^\infty\bigcup\limits_{n=N}^\infty
+      \left\{
+        \omega:\left|f_n\left(\omega\right) - f\left(\omega\right)\right| > \frac{1}{k}
+      \right\}
+    \end{aligned}
+  \]
+  
+\item
+  Use Lemma 1.3.1, we can conclude that
+  \[
+    \underset{n\to\infty}{\mathrm{lim\,sup}}\,A_n = \underset{n\to\infty}{\mathrm{lim\,inf}}\,A_n
+    = \left(0,\;1\right]
+  \]
+\item 
 
 
 
