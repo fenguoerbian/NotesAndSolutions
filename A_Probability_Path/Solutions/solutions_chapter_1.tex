@@ -136,8 +136,36 @@
     = \left(0,\;1\right]
   \]
 \item 
+  \begin{enumerate}
+  \item Since $\theta = 1/8 $, the period is $T=8$. And there are actually 2 distinguished squares. Hence $ \underset{n\to\infty}{\mathrm{limsup}}\;I_n$ is the star area covered by at least one squate and $ \underset{n\to\infty}{\mathrm{liminf}}\;I_n$ is the area covered by both squares. Refer to Figure~\ref{fig:1.9.7.a} as illustration.
+    \begin{figure}[htbp]
+      \centering
+      \includegraphics[width=0.6\textwidth]{./Figures/1_9_7_a.pdf}
+      \caption{(a)}
+      \label{fig:1.9.7.a}
+    \end{figure}
 
+  \item If $\theta$ is rational, then it can be written in the form $\theta = \frac{m}{n}$ where both $m$ and $n$ are integers, which means there is a period in $I_n$. Hence like before, $ \underset{n\to\infty}{\mathrm{limsup}}\;I_n$ is the star area covered by at least one squate and $ \underset{n\to\infty}{\mathrm{liminf}}\;I_n$ is the area covered by all squares. Refer to Figure~\ref{fig:1.9.7.b} as illustration.
+    \begin{figure}[htbp]
+      \centering
+      \includegraphics[width=0.6\textwidth]{./Figures/1_9_7_b.pdf}
+      \caption{(b) $\theta = \frac{1}{7}$}
+      \label{fig:1.9.7.b}
+    \end{figure}
+    
+  \item If $\theta$ is irrational. These squares becomes dense and $ \underset{n\to\infty}{\mathrm{limsup}}\;I_n$ is the round area with radius $r_{\mathrm{sup}}= \sqrt{2}$ and $ \underset{n\to\infty}{\mathrm{liminf}}\;I_n$ is the round area with radius $r_{\mathrm{inf}} = 1$. Refer to Figure~ as illustration.
+    \begin{figure}[htbp]
+      \centering
+      \includegraphics[width=0.6\textwidth]{./Figures/1_9_7_c.pdf}
+      \caption{(c) $\theta = e^{1/2}$}
+      \label{fig:1.9.7.c}
+    \end{figure}
+  \item Codes for drawing these figures are provided below:
+    \lstinputlisting[language=R]{./Codes/ex_1_9_7_plot.r}
+  \end{enumerate}
 
+  
+\item To be added.
 
   
 \end{list}
