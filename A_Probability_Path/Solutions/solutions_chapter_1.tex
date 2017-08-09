@@ -140,7 +140,7 @@
   \item Since $\theta = 1/8 $, the period is $T=8$. And there are actually 2 distinguished squares. Hence $ \underset{n\to\infty}{\mathrm{limsup}}\;I_n$ is the star area covered by at least one squate and $ \underset{n\to\infty}{\mathrm{liminf}}\;I_n$ is the area covered by both squares. Refer to Figure~\ref{fig:1.9.7.a} as illustration.
     \begin{figure}[htbp]
       \centering
-      \includegraphics[width=0.6\textwidth]{./Figures/1_9_7_a.pdf}
+      \includegraphics[width=0.5\textwidth]{./Figures/1_9_7_a.pdf}
       \caption{(a)}
       \label{fig:1.9.7.a}
     \end{figure}
@@ -148,7 +148,7 @@
   \item If $\theta$ is rational, then it can be written in the form $\theta = \frac{m}{n}$ where both $m$ and $n$ are integers, which means there is a period in $I_n$. Hence like before, $ \underset{n\to\infty}{\mathrm{limsup}}\;I_n$ is the star area covered by at least one squate and $ \underset{n\to\infty}{\mathrm{liminf}}\;I_n$ is the area covered by all squares. Refer to Figure~\ref{fig:1.9.7.b} as illustration.
     \begin{figure}[htbp]
       \centering
-      \includegraphics[width=0.6\textwidth]{./Figures/1_9_7_b.pdf}
+      \includegraphics[width=0.5\textwidth]{./Figures/1_9_7_b.pdf}
       \caption{(b) $\theta = \frac{1}{7}$}
       \label{fig:1.9.7.b}
     \end{figure}
@@ -156,7 +156,7 @@
   \item If $\theta$ is irrational. These squares becomes dense and $ \underset{n\to\infty}{\mathrm{limsup}}\;I_n$ is the round area with radius $r_{\mathrm{sup}}= \sqrt{2}$ and $ \underset{n\to\infty}{\mathrm{liminf}}\;I_n$ is the round area with radius $r_{\mathrm{inf}} = 1$. Refer to Figure~ as illustration.
     \begin{figure}[htbp]
       \centering
-      \includegraphics[width=0.6\textwidth]{./Figures/1_9_7_c.pdf}
+      \includegraphics[width=0.5\textwidth]{./Figures/1_9_7_c.pdf}
       \caption{(c) $\theta = e^{1/2}$}
       \label{fig:1.9.7.c}
     \end{figure}
@@ -165,8 +165,29 @@
   \end{enumerate}
 
   
-\item To be added.
+\item
+  \[
+    \mathrm{limsup}A_n = \bigcap\limits_{n=1}^\infty\bigcup\limits_{k=n}^\infty A_k = B \cup C
+  \]
+  and
+  \[
+    \mathrm{liminf}A_n = \bigcup\limits_{n=1}^\infty\bigcap\limits_{k=n}^\infty A_k = B \cap C
+  \]
 
+  
+\item
+  \[
+    \begin{aligned}
+      A \bigtriangleup B &= \left(A \setminus B\right) \cup \left(B \setminus A\right)    \\
+      & = \left(A \cap B^c \right) \cup \left(B \cap A^c \right)    \\
+      & = \left(B^c \cap \left(A^c\right)^c \right) \cup \left(A^c \cap \left(B^c\right)^c \right)    \\
+      & = \left(B^c \setminus A^c \right) \cup \left(A^c \setminus B^c \right)    \\
+      & = A^c \bigtriangleup B^c
+    \end{aligned}
+  \]
+
+  
+\item To be added.
   
 \end{list}
 
