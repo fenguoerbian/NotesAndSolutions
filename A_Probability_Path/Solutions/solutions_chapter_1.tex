@@ -187,8 +187,107 @@
   \]
 
   
-\item To be added.
+\item $\Longrightarrow$:
+  \par
+  Since $A_n \rightarrow A$, we have
+  \[
+    \underset{n\to\infty}{\mathrm{lim\,inf}}A_n = \underset{n\to\infty}{\mathrm{lim\,sup}}A_n = A
+  \]
+  If $w \in A\quad\implies\quad w \in \underset{n\to\infty}{\mathrm{lim\,inf}A_n}$, then
+  \[
+    \begin{aligned}
+      & \exists\;n_0,\quad\text{s.t. }\forall\; n \geq n_0,\quad w \in A_n    \\
+      \implies & \forall\; n \geq n_0, 1_{A_n}(w) = 1    \\
+      \implies & \underset{n\to\infty}{\mathrm{lim}}\,1_{A_n}\left(w\right) = 1 = 1_{A}\left(w\right)
+    \end{aligned}
+  \]
+  And if $ w \in A^c$, then $w \in \left(\underset{n\to\infty}{\mathrm{lim\,sup}}\,A_n\right)^c = \underset{n\to\infty}{\mathrm{lim\,inf}}\,A_n^c$, which means
+  \[
+    \begin{aligned}
+      & \exists\;n_0,\quad\text{s.t. }\forall\; n \geq n_0,\quad w \in A_n^c    \\
+      \implies & \forall\; n \geq n_0, 1_{A_n}(w) = 0    \\
+      \implies & \underset{n\to\infty}{\mathrm{lim}}\,1_{A_n}\left(w\right) = 0 = 1_{A}\left(w\right)
+    \end{aligned}
+  \]
+  Hence $A_n\rightarrow A \implies 1_{A_n}\rightarrow 1_{A}$.
+  \par
+  $\Longleftarrow$:
+  If $1_A(w) = 1$, then $\underset{n\to\infty}{\mathrm{lim}}1_{A_n}\left(w\right) = 1$, which means
+  \[
+    \begin{aligned}
+      &\exists\; n_0,\quad\text{s.t. }\forall\; n \geq n_0,\quad 1_{A_n}\left(w\right) = 1    \\
+      \implies & \forall\; n \geq n_0,\quad w \in A_n    \\
+      \implies & w \in \underset{n\to\infty}{\mathrm{lim\,inf}}A_n    \\
+      \implies & A \subset \underset{n\to\infty}{\mathrm{lim\,inf}}A_n
+    \end{aligned}
+  \]
+  If $1_A(w) = 0$, then $\underset{n\to\infty}{\mathrm{lim}}1_{A_n}\left(w\right) = 0$, which means
+  \[
+    \begin{aligned}
+      &\exists\; n_0,\quad\text{s.t. }\forall\; n \geq n_0,\quad 1_{A_n}\left(w\right) = 0    \\
+      \implies & \forall\; n \geq n_0,\quad w \in A_n^c    \\
+      \implies & w \in \underset{n\to\infty}{\mathrm{lim\,inf}}A_n^c = \left(\underset{n\to\infty}{\mathrm{lim\,sup}}A_n\right)^c    \\
+      \implies & A^c \subset \left(\underset{n\to\infty}{\mathrm{lim\,sup}}A_n\right)^c    \\
+      \implies & A \subset \underset{n\to\infty}{\mathrm{lim\,sup}}A_n
+    \end{aligned}
+  \]
+  Therefore $\underset{n\to\infty}{\mathrm{lim\,sup}}A_n \subset \underset{n\to\infty}{\mathrm{lim\,inf}}A_n$, which means
+  \[
+    \underset{n\to\infty}{\mathrm{lim\,inf}}A_n = \underset{n\to\infty}{\mathrm{lim\,sup}}A_n = A
+  \]
+  Therefore $1_{A_n}\rightarrow 1_A \implies A_n\rightarrow A$.
   
+\item
+  \[
+    \begin{aligned}
+      & w \in \underset{n \geq 1}{\mathrm{sup}}\left[0,\; a_n\right)    \\
+      \implies & \exists\; n_0,\; \text{s.t. } w \in \left[0,\; a_{n_0}\right)    \\
+      \implies & w \in \left[0,\; \underset{n\geq 1}{\mathrm{sup}}\; a_{n}\right) \quad\quad
+      \text{(since $\underset{n\geq 1}{\mathrm{sup}}\; a_{n} \geq a_{n_0}$)}    \\
+      \implies & \underset{n \geq 1}{\mathrm{sup}}\left[0,\; a_n\right) \subset
+      \left[0,\; \underset{n\geq 1}{\mathrm{sup}}\; a_{n}\right)
+    \end{aligned}
+  \]
+  Also note that
+  \[
+    \begin{aligned}
+      & w \in \left[0,\; \underset{n\geq 1}{\mathrm{sup}}\; a_{n}\right)
+      \implies w < \underset{n\geq 1}{\mathrm{sup}}\; a_{n}\\
+      \implies & \exists\; a_{n_0},\; \text{s.t. } w < a_{n_0}    \\
+      \implies & w \in \left[0,\; a_{n_0}\right)    \\
+      \implies & w \in \underset{n \geq 1}{\mathrm{sup}}\left[0,\; a_n\right)    \\
+      \implies & \left[0,\; \underset{n\geq 1}{\mathrm{sup}}\; a_{n}\right) \subset
+      \underset{n \geq 1}{\mathrm{sup}}\left[0,\; a_n\right)
+    \end{aligned}
+  \]
+  Therefore
+  \[
+    \underset{n \geq 1}{\mathrm{sup}}\left[0,\; a_n\right)
+    = \left[0,\; \underset{n\geq 1}{\mathrm{sup}}\; a_{n}\right)
+  \]
+  For the second part, the left hand side equals to
+  \[
+    \underset{n\geq 1}{\mathrm{sup}}\; \left[0,\; \frac{n}{n+1}\right] = \left[0,\; 1\right)
+  \]
+  while the right hand side equals to
+  \[
+    \left[0,\; \underset{n\geq 1}{\frac{n}{n+1}}\right] = \left[0, 1\right]
+  \]
+  Clearly, lhs $\neq$ rhs.
+  
+\item
+  \[
+    \mathcal{A}\left(\mathcal{C}\right) = \sigma\left(\mathcal{C}\right) =
+    \left\{
+      \begin{aligned}
+        & \emptyset,\; \Omega,\; \left\{2,\; 4\right\},\; \left\{6\right\}    \\
+        & \left\{1,\; 3,\; 5,\; 6\right\},\; \left\{1,\; 2,\; 3,\; 4,\; 5\right\}    \\
+        & \left\{2,\; 4,\; 6\right\},\; \left\{1,\; 3,\; 5\right\}
+      \end{aligned}
+    \right\}
+  \]
+  
+\item To be added.
 \end{list}
 
 %%% Local Variables:
