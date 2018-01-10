@@ -1,6 +1,7 @@
 2018/01/10
 
 It's been a long time since my last update. 1st semester of my PHD has finished. Little has been done and I'm considering maybe someday I'll replace this repo with several new ones with each one for one specfic book.
+
 ---
 
 Here are some notes and solutions of the books I read.
