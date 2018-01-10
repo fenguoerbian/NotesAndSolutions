@@ -1,3 +1,8 @@
+2018/01/10
+
+It's been a long time since my last update. 1st semester of my PHD has finished. Little has been done and I'm considering maybe someday I'll replace this repo with several new ones with each one for one specfic book.
+---
+
 Here are some notes and solutions of the books I read.
 
 I know maybe I should open a blog to store this kind of stuff but currently I'm too lazy to learn and set up my github pages. So currently this repository will do the work and I hope maybe someday I will open my blog.
