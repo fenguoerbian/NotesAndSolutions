@@ -287,9 +287,68 @@
     \right\}
   \]
   
-\item To be added.
+\item Check the definition of $\sigma$-field on $\mathcal{F}$.
+  \begin{enumerate}
+  \item $\hat{\mathcal{F}}$ is a $\sigma$-field, therefore $\hat{\Omega}\in\hat{\mathcal{F}}$, then
+    \[
+      \bigcup\limits_{C_t\in\hat{\Omega}}C_t = \bigcup\limits_{t\in T}C_t = \Omega \in \mathcal{F}
+    \]
+    
+  \item
+    \[
+      \forall\; A \in \mathcal{F}
+      \quad\implies\quad
+      \exists\; \hat{A}\in\hat{\mathcal{F}} \text{ s.t. } A = \bigcup\limits_{C_t\in\hat{A}}C_t
+    \]
+    Note that $\Omega = \bigcup\limits_{t\in T}C_t $ and $C_s \bigcap C_t = \emptyset$ for all $s,t\in T$. Then
+    \[
+      A^c = \bigcup\limits_{C_t\notin \hat{A}}C_t = \bigcup\limits_{C_t\in\hat{A}^c} C_t \in \mathcal{F}
+    \]
+    
+  \item $\forall\; A_1,\; A_2,\; A_3,\dots\in\mathcal{F}$, we can write
+    \[
+      \bigcup A_i = \bigcup\left\{
+        \bigcup\limits_{C_{i,t}\in\hat{A_i}}C_{i,t}
+      \right\}
+      = \bigcup\limits_{C_t\in\bigcup \hat{A_i}}C_t
+      \in \Omega
+    \]
+  \end{enumerate}
+  Therefore, $\mathcal{F}$ is a $\sigma$-field on $\Omega$.
+  \par
+  Also, note that $\forall\;\hat{A_1} \neq \hat{A_1}$:
+  \[
+    \bigcup_{C_t\in\hat{A_1}}C_t \neq \bigcup\limits_{C_t\in\hat{A_2}}C_t
+  \]
+  Therefore, $f$ is a 1-1 mapping from $\hat{\mathcal{F}}$ to $\mathcal{F}$.
+  
+\item Check the definition of field on $\cup_n \mathcal{A}_n$:
+  \begin{enumerate}
+  \item $\forall i,\; \Omega \in \mathcal{A}_i
+    \;\implies\;
+    \Omega\in\cup_n\mathcal{A}_n$.
+  \item $\forall\;A\in\cup_n\mathcal{A}_n
+    \;\implies\;
+    \exists\; i,\; \text{ s.t. } A \in \mathcal{A}_i
+    \;\implies\;
+    A^c\in\mathcal{A}_i
+    \;\implies\;
+    A^c\in\cup_n\mathcal{A}_n$
+  \item $\forall A, B \in \cup_n\mathcal{A}_n \;\implies\; \exists\;i,\;j \text{ s.t. }A\in\mathcal{A}_i \text{ and }B\in\mathcal{A}_j$.
+    \par
+    Note that $\mathcal{A}_n \in \mathcal{A}_{n+1}$. Therefore
+    \par
+    $\exists\; i_0 = \mathrm{max}\{i, j\},\; \text{ s.t. }
+    A\in\mathcal{A}_{i_0}\;\text{ and }\;B\in\mathcal{A}_{i_0} $
+    \par
+    Then
+    \par
+    $A \cup B \in \mathcal{A}_{i_0} \;\implies\; A \cup B \in \cup_n\mathcal{A}_n$
+  \end{enumerate}
+  Hence $\cup_n\mathcal{A}_n$ is a field.
 \end{list}
 
+\clearpage{}
 %%% Local Variables:
 %%% mode: latex
 %%% TeX-master: "../Solutions_A_Probability_Path"
