@@ -1,0 +1,32 @@
+\section{Solutions to Chapter 4: Independence}
+\label{sec:solutions-chapter-4}
+
+\setcounter{Lcount}{0}
+\begin{list}{4.6.\arabic{Lcount}}{\usecounter{Lcount}}
+\item
+  \[
+    P\left(\bigcup\limits_{i=1}^nB_i\right)
+    = 1 - P\left(\bigcap\limits_{i = 1}^nB_i^c\right)
+    = 1 - \prod\limits_{i = 1}^n P\left(B_i^c\right)
+    = 1 - \prod\limits_{i = 1}^n\left(1 - P\left(B_i\right)\right)
+  \]
+  
+\item I guess the answer is $2^n$. But a proof is needed.
+  
+\item
+  \[
+    P\left(\bigcap\limits_{n = 1}^\infty A_n\right)
+    = P\left(\underset{m\rightarrow\infty}{\mathrm{lim}}\bigcap\limits_{n = 1}^m A_n\right)
+    = \underset{m\rightarrow\infty}{\mathrm{lim}}P\left(\bigcap\limits_{n = 1}^mA_n\right)
+    = \underset{m\rightarrow\infty}{\mathrm{lim}}\prod\limits_{n=1}^mP\left(A_n\right)
+    = \prod\limits_{n=1}^\infty P\left(A_n\right)
+  \]
+  The second equation follows the fact that probability measure $P$ is continuous on monotone sequence $\left\{\bigcap\limits_{n=1}^mA_n,\;m\geq1\right\}$.
+\end{list}
+
+\clearpage{}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "../Solutions_A_Probability_Path"
+%%% End:
