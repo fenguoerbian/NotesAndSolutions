@@ -3,8 +3,63 @@
 
 \setcounter{Lcount}{0}
 \begin{list}{2.6.\arabic{Lcount}}{\usecounter{Lcount}}
-\item To be added.
+\item
+  \begin{enumerate}[(a)]
+  \item Check the definition of filed on $\mathcal{F}_0$:
+    \begin{enumerate}[(1)]
+    \item $\Omega\in\mathcal{F}_0$ since $\left|\Omega^c\right| = \left|\emptyset\right| = 0 $
+    \item $\forall A \in \mathcal{F}_0$, by definition of $\mathcal{F}_0$ we know that either $\left|A\right|$ or $\left|A^c\right|$ is finite, then clearly $A^c\in\mathcal{F}_0$.
+    \item $\forall A,\;B\in\mathcal{F}_0$, then either $\left|A\right|$ or $\left|A^c\right|$ is finite. Same holds for either $\left|B\right|$ and $\left|B^c\right|$. Then we know:
+      \begin{enumerate}[3.1]
+      \item If $\left|A\right|$ and $\left|B\right|$ are both finite, then $\left|A\cup B\right|$ is finite.
+      \item If $\left|A\right|$ and $\left|B^c\right|$ are both finite, then
+        $
+          \left|\left(A\cup B\right)^c\right| = \left|A^c\cap B^c\right| \leq \left|B^c\right|
+        $ is finite.
+      \item If $\left|A^c\right|$ and $\left| B\right|$ are both finite, then same as before, we know $\left|A^c\cap B^c\right| $ is finite.
+      \item If $\left|A^c\right|$ and $\left|B^c\right|$ are both finite, then
+        $
+          \left|\left(A\cup B\right)^c\right| = \left|A^c\cap B^c\right|
+        $ is finite.
+      \end{enumerate}
+      In summary, either $\left|A\cup B\right|$ or $\left|A^c\cap B^c\right|$ is finite, hence $A\cup B\in\mathcal{F}_0$.
+    \end{enumerate}
+    Therefore we have shown that $\mathcal{F}_0$ is a field.
+  \item Since $\Omega$ is countably infinite, then $\forall A\in\mathcal{F}_0$, one and only one of $A$ and $A^c$ is finite. Now check the finite additivity of $P$:
+    \par
+    $\forall A_1, A_2, \cdots, A_n \in \mathcal{F}_0$ where $\forall\;i\neq j$, $A_i\cap A_j = \emptyset$.
+    \begin{enumerate}[(1)]
+    \item If $A_i$ is finite for all $i = 1, 2, \cdots, n$, then so is $\bigcup\limits_{i=1}^nA_i$. Therefore $\bigcup\limits_{i=1}^\infty A_i\in\mathcal{F}_0$ and 
+      \[
+        P\left(\bigcup\limits_{i=1}^nA_i\right) = 0 = \sum\limits_{i=1}^n 0 = \sum\limits_{i=1}^nP\left(A_i\right)
+      \]
+    \item If one(and only one because $\left\{A_i\right\}$ are disjoint) of $\left\{A_i\right\}$ is infinite, say $A_{i_0}$. Then $\left(\bigcup\limits_{i=1}^nA_i\right)^c$ is finite, therefore $\bigcup\limits_{i=1}^\infty A_i\in\mathcal{F}_0$ and 
+      \[
+        P\left(\bigcup\limits_{i=1}^nA_i\right) = 1
+        = 1 + \sum\limits_{i\neq i_0}0
+        = P\left(A_{i_0}\right) + \sum\limits_{i\neq i_0}P\left(A_i\right) = \sum\limits_{i=1}^nP\left(A_i\right)
+      \]
+    \end{enumerate}
+    By this point we have shown the finite additivity of $P$.
+    \par
+    But $P$ is not $\sigma$-additive. To show this, just pick finite disjoint set series $A_1, A_2, \cdots $ from $\mathcal{F}_0$ such that $\bigcup\limits_{i=1}^\infty A_i\in\mathcal{F}_0$. Then clearly $\bigcup\limits_{i=1}^\infty A_i$ is inifite, which means $\left(\bigcup\limits_{i=1}^\infty A_i\right)^c$ is finite. Then
+    \[
+      P\left(\bigcup\limits_{i=1}^\infty A_i\right) = 1 \neq 0 = \sum\limits_{i=1}^\infty P\left(A_i\right)
+    \]
+  \item Like before, since $\Omega$ is uncountably infinite, $\forall A\in\mathcal{F}_0$, one and only one of $A$ and $A^c$ is finite. Its counterpart is uncountably infinite.
+    \par
+    Now pick any disjoint set series $A_1, A_2, \cdots$ from $\mathcal{F}_0$ such that $\bigcup\limits_{i=1}^\infty A_i\in\mathcal{F}_0$. Clearly, $\bigcup\limits_{i=1}^\infty A_i$ is infinite, then $\left(\bigcup\limits_{i=1}^\infty A_i\right)^c$ has to be finite in order to make it belong to $\mathcal{F}_0$. This means $\bigcup\limits_{i=1}^\infty A_i$ is uncountably infite, which indicates one(and only one because $\left\{A_i\right\}$ are disjoint) of $\left\{A_i\right\}$, say $A_{i_0}$,  is uncountably infite while the others are all finite. Then we have
+    \[
+      P\left(\bigcup\limits_{i=1}^\infty A_i\right) = 1 = 1 + \sum\limits_{i\neq i_0}0
+      = P\left(A_{i_0}\right) + \sum\limits_{i\neq i_0}P\left(A_i\right) = \sum\limits_{i=1}^nP\left(A_i\right)
+    \]
+    Therefore, $P$ is $\sigma$-additive.
+  \end{enumerate}
+
 \end{list}
+
+
+
 
 \clearpage{}
 

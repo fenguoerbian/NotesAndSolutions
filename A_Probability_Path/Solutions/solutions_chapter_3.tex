@@ -3,7 +3,70 @@
 
 \setcounter{Lcount}{0}
 \begin{list}{3.4.\arabic{Lcount}}{\usecounter{Lcount}}
-\item To be added.
+\item Note that $\mathcal{B}\left(\mathbb{R}\right) = \sigma\left(\mathcal{C}\right)$, where $\mathcal{C}=\left\{\left(-\infty, a\right],\;a\in\mathbb{R}\right\}$. Then we can show that
+  \[
+    1_A^{-1}\left(\left(-\infty,\;a\right]\right)
+    =
+    \left\{
+      \begin{aligned}
+        & \emptyset &&\quad a < 0    \\
+        & A^c &&\quad 0 \leq a < 1    \\
+        & \Omega &&\quad 1 \leq a
+      \end{aligned}
+    \right.
+  \]
+  Clearly, $A\in\mathcal{B}\;\iff\;1_A\in\mathcal{B}$.
+  
+\item  Note that $\mathcal{B}\left(\mathbb{R}\right) = \sigma\left(\mathcal{C}\right)$, where $\mathcal{C}=\left\{\left(-\infty, a\right],\;a\in\mathbb{R}\right\}$. Therefore for $X_1$:
+  \[
+    X_1^{-1}\left(\left(-\infty, \; a\right]\right) =
+    \left\{
+      \begin{aligned}
+        & \emptyset &&\quad a < 0    \\
+        & \Omega &&\quad 0 \leq a
+      \end{aligned}
+    \right.
+  \]
+  Hence
+  \[
+    \sigma\left(X_1\right)
+    = \sigma\left(\left\{\emptyset,\; \Omega\right\}\right)
+    = \left\{\emptyset,\; \Omega\right\}
+  \]
+  Similarly
+  \[
+    X_2^{-1}\left(\left(-\infty,\; a\right]\right) =
+    \left\{
+      \begin{aligned}
+        & \emptyset &&\quad a < 0    \\
+        & \left(0,\;1/2\right)\cup\left(1/2,\;1\right] &&\quad 0 \leq a < 1    \\
+        & \Omega  &&\quad 1 \leq a
+      \end{aligned}
+    \right.
+  \]
+  Therefore
+  \[
+    \sigma\left(X_2\right)
+    = \sigma\left(\left\{\emptyset,\; \left(0,\;1/2\right)\cup\left(1/2,\;1\right],\; \Omega\right\}\right)
+    = \left\{\emptyset,\; \left\{1/2\right\},\; \left(0,\;1/2\right)\cup\left(1/2,\;1\right],\; \Omega\right\}
+  \]
+  And
+  \[
+    X_3^{-1}\left(\left(-\infty, a\right]\right) =
+    \left\{
+      \begin{aligned}
+        & \emptyset &&\quad a < 0    \\
+        & \mathbb{Q}^c &&\quad 0 \leq a < 1    \\
+        & \Omega &&\quad 1 \leq a
+      \end{aligned}
+    \right.
+  \]
+  Hence
+  \[
+    \sigma\left(X_3\right)
+    = \sigma\left(\left\{\emptyset,\; \mathbb{Q},\; \Omega\right\}\right)
+    = \left\{\emptyset,\; \mathbb{Q},\; \mathbb{Q}^c,\; \Omega\right\}
+  \]
 \end{list}
 
 \clearpage{}

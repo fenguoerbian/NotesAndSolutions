@@ -141,7 +141,7 @@
     \begin{figure}[htbp]
       \centering
       \includegraphics[width=0.5\textwidth]{./Figures/1_9_7_a.pdf}
-      \caption{(a)}
+      \caption{(a) $\theta = \frac{1}{8}$}
       \label{fig:1.9.7.a}
     \end{figure}
 
@@ -153,7 +153,7 @@
       \label{fig:1.9.7.b}
     \end{figure}
     
-  \item If $\theta$ is irrational. These squares becomes dense and $ \underset{n\to\infty}{\mathrm{limsup}}\;I_n$ is the round area with radius $r_{\mathrm{sup}}= \sqrt{2}$ and $ \underset{n\to\infty}{\mathrm{liminf}}\;I_n$ is the round area with radius $r_{\mathrm{inf}} = 1$. Refer to Figure~ as illustration.
+  \item If $\theta$ is irrational. These squares becomes dense and $ \underset{n\to\infty}{\mathrm{limsup}}\;I_n$ is the round area with radius $r_{\mathrm{sup}}= \sqrt{2}$ and $ \underset{n\to\infty}{\mathrm{liminf}}\;I_n$ is the round area with radius $r_{\mathrm{inf}} = 1$. Refer to Figure~\ref{fig:1.9.7.c} as illustration.
     \begin{figure}[htbp]
       \centering
       \includegraphics[width=0.5\textwidth]{./Figures/1_9_7_c.pdf}
@@ -316,7 +316,7 @@
   \end{enumerate}
   Therefore, $\mathcal{F}$ is a $\sigma$-field on $\Omega$.
   \par
-  Also, note that $\forall\;\hat{A_1} \neq \hat{A_1}$:
+  Also, note that $\forall\;\hat{A_1} \neq \hat{A_2}$:
   \[
     \bigcup_{C_t\in\hat{A_1}}C_t \neq \bigcup\limits_{C_t\in\hat{A_2}}C_t
   \]
@@ -346,6 +346,61 @@
     $A \cup B \in \mathcal{A}_{i_0} \;\implies\; A \cup B \in \cup_n\mathcal{A}_n$
   \end{enumerate}
   Hence $\cup_n\mathcal{A}_n$ is a field.
+  
+\item {\color{red}To be added. You can refer to the old solutions online.}
+  
+\item Let $\Omega = \left\{1,2,3,4\right\}$ and
+  \[
+    \mathcal{A} = \left\{\emptyset, \Omega, \left\{1, 2\right\}, \left\{3,4\right\},
+      \left\{2, 3\right\}, \left\{1, 4\right\}
+    \right\}
+  \]
+  But $\mathcal{A}$ is not a field since
+  \[
+    \left\{1, 2\right\} \cup \left\{2, 3\right\} \notin \mathcal{A}
+  \]
+  
+\item \[
+    \begin{aligned}
+      \underset{n\rightarrow\infty}{\mathrm{liminf}}\;A_n
+      & = \left\{
+        \omega:\; \omega\in A_n\text{ for all } n \text{ except a finite number}
+      \right\}    \\
+      & = \left\{\omega:\; \sum\limits_{n}1_{A_n^c}\left(\omega\right) < \infty \right\}    \\
+      & = \left\{
+        \omega:\; \underset{n\rightarrow\infty}{\mathrm{lim}}\;1_{A_n}\left(\omega\right) = 1
+      \right\}
+    \end{aligned}
+  \]
+  
+\item Check the definition of field on $\mathcal{A}$:
+  \begin{enumerate}
+  \item $\Omega\in\mathcal{A}$ by definition.
+  \item $\forall\; A\in\mathcal{A}$, we have $A^c = \Omega \setminus A \in\mathcal{A}$ since $\Omega\in\mathcal{A}$.
+  \item $\forall\;A,B\in\mathcal{A}$, we can write
+    \[
+      A,B\in\mathcal{A} \implies A,B^c\in\mathcal{A} \implies A\setminus B^c = A\cap B \in \mathcal{A}
+    \]
+  \end{enumerate}
+  Therefore $\mathcal{A}$ is a field.
+  
+\item
+  \[
+    \begin{aligned}
+      & 1_{A\cup B}\left(\omega\right) = 1 \iff \omega\in A\cup B
+      \iff 1_A\left(\omega\right) \vee 1_B\left(\omega\right) = 1    \\
+      & 1_{A\cup B}\left(\omega\right) = 0 \iff \omega\notin A\cup B
+      \iff 1_A\left(\omega\right) \vee 1_B\left(\omega\right) = 0    \\
+      & 1_{A\cap B}\left(\omega\right) = 1 \iff \omega\in A\cap B
+      \iff 1_A\left(\omega\right) \wedge 1_B\left(\omega\right) = 1    \\
+      & 1_{A\cap B}\left(\omega\right) = 0 \iff \omega\notin A\cap B
+      \iff 1_A\left(\omega\right) \wedge 1_B\left(\omega\right) = 0    \\
+    \end{aligned}
+  \]
+  Therefore
+  \[
+    1_{A\cup B} = 1_A \vee 1_B \quad\quad 1_{A \cap B} = 1_A \wedge 1_B
+  \]
 \end{list}
 
 \clearpage{}
