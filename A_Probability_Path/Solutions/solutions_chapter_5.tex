@@ -3,7 +3,28 @@
 
 \setcounter{Lcount}{0}
 \begin{list}{5.10.\arabic{Lcount}}{\usecounter{Lcount}}
-\item To be added.
+\item \[
+    \mathrm{E}\left(X_1 + X_2\right)
+    = \mathrm{E}\left(X_1\right) + \mathrm{E}\left(X_2\right)
+    = 0 + 0.5 = 0.5
+  \]
+  
+\item \[
+    \mathrm{Var}\left(c\right) = \mathrm{E}\left(c^2\right) - \mathrm{E}^2\left(c\right) = c^2 - c^2 = 0
+  \]
+  and
+  \[
+    \begin{aligned}
+      \mathrm{Var}\left(X + c\right)
+      & = \mathrm{E}\left(X+c\right)^2 - \mathrm{E}^2\left(X + c\right)    \\
+      & = \mathrm{E}\left(X^2 + 2cX + c^2\right)
+      - \left(
+        \mathrm{E}^2\left(X\right) + 2c\mathrm{E}\left(X\right) + c^2
+      \right)    \\
+      & = \mathrm{E}\left(X^2\right) - \mathrm{E}^2\left(X\right)    \\
+      & = \mathrm{Var}\left(X\right)
+    \end{aligned}
+      \]
 \end{list}
 
 \clearpage{}

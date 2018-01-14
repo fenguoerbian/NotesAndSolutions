@@ -3,7 +3,31 @@
 
 \setcounter{Lcount}{0}
 \begin{list}{7.7.\arabic{Lcount}}{\usecounter{Lcount}}
-\item To be added.
+\item $\sum_n1/n = \infty$, not convergent. $\sum_n\left(-1\right)^n/n < \infty$, convergent. Now that $\left\{X_n\right\}$ are iid with
+  \[
+    P\left(X_n = \pm 1\right) = \frac{1}{2}
+  \]
+  Then $\mathrm{E}X_n = 0$ and $\mathrm{Var}X = 1$. Therefore
+  \[
+    \sum\limits_{n=1}^\infty\mathrm{Var}\left(\frac{X_n}{n}\right)
+    = \sum\limits_{n=1}^\infty\frac{1}{n^2}<\infty
+  \]
+  By Kolmogorov Convergence Criterion, $\sum\limits_{n=1}^\infty\left(\frac{X_n}{n} - \mathrm{E}\frac{X_n}{n}\right) = \sum\limits_{n=1}^\infty\frac{X_n}{n}$ convergence almost surely.
+  
+\item \[
+    \frac{1}{n}\sum\limits_{i=1}^n\left(X_i - \bar{X}\right) = \frac{1}{n}\sum\limits_{i=1}^nX_i^2 - \bar{X}^2
+  \]
+  Note that
+  \[
+    \left\{
+      \begin{aligned}
+        & \frac{1}{n}\sum\limits_{i=1}^nX_i^2 \overset{\mathrm{i.p.}}{\longrightarrow} \mathrm{E}X^2    \\
+        & \bar{X} \overset{\mathrm{i.p.}}{\longrightarrow} \mathrm{E}X = \mu
+        \implies \bar{X}^2 \overset{\mathrm{i.p.}}{\longrightarrow} \mu^2
+      \end{aligned}
+    \right.
+  \]
+  Therefore $\frac{1}{n}\sum\limits_{i=1}^n\left(X_i - \bar{X}\right)^2 \overset{\mathrm{i.p.}}{\longrightarrow} \sigma^2$.
 \end{list}
 
 \clearpage{}
