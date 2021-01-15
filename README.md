@@ -1,3 +1,11 @@
+2021/01/15
+3 years have passed. When I look back at the list I found that I have finished none of the books listed here. What a shame.
+But now I want to add some books into this repo.
+
+* Mastering Shiny by Hadley Wickham
+
+---
+
 2018/01/10
 
 It's been a long time since my last update. 1st semester of my PHD has finished. Little has been done and I'm considering maybe someday I'll replace this repo with several new ones with each one for one specfic book.
